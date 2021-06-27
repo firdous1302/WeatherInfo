@@ -1,20 +1,12 @@
 package com.project.weatherInfo.beans;
 
 import java.time.Instant;
-import java.util.List;
+
 
 public class Daily {
 	
 	
     private long dt;	
-	
-	private long sunrise;	
-	
-	private long sunset;	
-	/*
-	 * private long dt; private long dt; private long dt;
-	 
-	 */
 	
 	private Temperature temp;
 	
@@ -36,22 +28,7 @@ public class Daily {
 		this.dt = dt;
 	}
 
-	public long getSunrise() {
-		return sunrise;
-	}
-
-	public void setSunrise(long sunrise) {
-		this.sunrise = sunrise;
-	}
-
-	public long getSunset() {
-		return sunset;
-	}
-
-	public void setSunset(long sunset) {
-		this.sunset = sunset;
-	}
-
+	
 	public Temperature getTemp() {
 		return temp;
 	}

@@ -1,15 +1,12 @@
 package com.project.weatherInfo.controllers;
 
-import static java.time.Instant.ofEpochSecond;
+
 
 import java.text.ParseException;
 
-import java.time.Instant;
-import java.util.ArrayList;
+
 import java.util.Iterator;
 import java.util.List;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -19,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import com.project.weatherInfo.beans.Daily;
-import com.project.weatherInfo.beans.Temperature;
+
 import com.project.weatherInfo.beans.Weather;
 
 @RestController
