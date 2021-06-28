@@ -30,7 +30,7 @@ public class WeatherController {
 	private String apiKey;
 	
 	@RequestMapping("/getWarmestDay")
-	public Daily getWarmestDay(@RequestParam double latitude,@RequestParam double longitude) throws ParseException {
+	public Daily getWarmestDay(@RequestParam double latitude,@RequestParam double longitude) {
 		
 		String url="https://api.openweathermap.org/data/2.5/onecall?lat="+latitude+"&lon="+longitude+"&appid="+apiKey;
 		
@@ -75,7 +75,6 @@ public class WeatherController {
 	    	}
         	
 	    }
-	    
 	    
 		
 		return dailyMax;
